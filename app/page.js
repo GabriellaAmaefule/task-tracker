@@ -81,7 +81,7 @@ export default function Home() {
     <main className="app-shell">
       {mobileNavOpen && <button className="nav-scrim" aria-label="Close navigation" onClick={() => setMobileNavOpen(false)} />}
       <aside className={`sidebar ${mobileNavOpen ? 'sidebar-open' : ''}`}>
-        <div className="brand"><div className="brand-mark"><span>be</span></div><div><strong>BrightEdge</strong><small>WORKSPACE</small></div><button className="mobile-close icon-button" onClick={() => setMobileNavOpen(false)} aria-label="Close menu"><Icon name="close"/></button></div>
+        <div className="brand"><div className="brand-mark"><span>BE</span></div><div><strong>BrightEdge</strong><small>WORKSPACE</small></div><button className="mobile-close icon-button" onClick={() => setMobileNavOpen(false)} aria-label="Close menu"><Icon name="close"/></button></div>
         <div className="workspace-label">WORKSPACE</div>
         <nav className="side-nav" aria-label="Main navigation">
           <button className={`nav-item ${filter === 'all' ? 'active' : ''}`} onClick={() => chooseFilter('all')}><Icon name="grid"/><span>Overview</span><span className="nav-count">{tasks.length}</span></button>
